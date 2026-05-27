@@ -1,0 +1,64 @@
+/* CONTACT SECTION */
+.contact-section {
+    margin: 40px 0;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366; /* your header blue */
+}
+
+/* FORM CONTAINER */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;               /* center the form */
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* EACH FORM ROW */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+/* LABELS */
+.form-row label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* INPUTS & TEXTAREA */
+.form-row input,
+.form-row textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* FOCUS EFFECT */
+.form-row input:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: #003366;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #002244;
+}
