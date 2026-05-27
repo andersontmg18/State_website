@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Illinois State - Web Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/webformstyle.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-header">
+        <div class="header-content">
+            <img src="static/image/IMG_2463.WEBP" alt="illinois State Logo" class="logo">
+            <div>
+                <h1>Illinois</h1>
+                <p>Welcome to the Official State Website</p>
+            </div>
+
+            <nav class="nav-position">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="capitalcity.html">Capital City</a></li>
+                    <li><a href="chicago.html">Chicago</a></li>
+                    <li><a href="naperville.html">Naperville</a></li>
+                    <li><a href="webform.html">Web Form</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <!-- NAVIGATION -->
+
+
+    <!-- HERO IMAGE -->
+    <nav class="hero">
+        <img src="static/image/IMG_2476.WEBP" alt="Beautiful Illinois Landscape">
+        <div class="welcome">
+            <h2 id="main-message">Welcome to Our State!</h2>
+            <p>
+                Discover the beauty and opportunities of Illinois.
+                Learn about our vibrant cities, outdoor adventures,
+                and rich history.
+
+        </div>
+
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="container">
+
+        <!-- SECTION -->
+        <section>
+            <h2>Web form</h2>
+
+            <form class="contact-form" onsubmit="return validateEmailForm()" action="#" method="post">
+
+                <!-- First Name -->
+                <div class="form-row">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-row">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-row">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Confirm Email -->
+                <div class="form-row">
+                    <label for="confirmEmail">Confirm Email Address:</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" required>
+                </div>
+
+                <!-- Question Text Area -->
+                <div class="form-row">
+                    <label for="question">Ask a Question:</label>
+                    <textarea id="question" name="question" rows="5" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-row">
+                    <button type="submit"  class="submit-btn">Submit</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- ASIDE -->
+        <aside>
+            <p>content</p>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 State of Illinois | N. Michigan Ave, Chicago, IL 60611 </p>
+    </footer>
+
+    <script>
+        function validateEmailForm() {
+            var confirmEmail = document.getElementById("confirmEmail").value;
+
+            var email = document.getElementById("email").value;
+
+            if (confirmEmail !== email) {
+                alert("Email addresses do not match. Please Correct your entry.");
+                return false; 
+            }
+             alert("Thank you for contacting us. A member of the state team will analyze your request and connect with you soon.");
+            return true; 
+        }
+    </script>
+
+</body>
+
+</html>
