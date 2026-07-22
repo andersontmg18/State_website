@@ -24,7 +24,7 @@ This project serves as a deployed frontend portfolio piece while I continue buil
 - HTML5
 - CSS3
 - JavaScript
-- GitHub Pages
+- GitHub Pages.
 
 ## What I Learned
 
